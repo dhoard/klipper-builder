@@ -8,10 +8,13 @@ RUN apt-get update && \
         python3 \
         binutils
 
+RUN apt-get clean && \
+        rm -rf /var/lib/apt/lists/*
+
 RUN useradd -ms /bin/bash klipper-builder
 
 WORKDIR /klipper
 
 USER klipper-builder
 
-CMD ["make"]
+CMD ["/bin/bash", "-c", "make clean;make"]
