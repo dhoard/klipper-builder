@@ -6,7 +6,8 @@ RUN apt-get update && \
         gcc-arm-none-eabi \
         cpp \
         python3 \
-        binutils
+        binutils \
+        git
 
 RUN apt-get clean && \
         rm -rf /var/lib/apt/lists/*
