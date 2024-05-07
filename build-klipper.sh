@@ -1,13 +1,18 @@
 #!/bin/bash
 
 # Check if an argument is provided
-if [ $# -ne 1 ]; then
+if [ $# -gt 1 ]; then
     echo "Usage: $0 <Klipper directory>"
     exit 1
 fi
 
+if [ $# -eq 0 ]; then
+  KLIPPER_DIRECTORY=.
+else
+  KLIPPER_DIRECTORY=$1
+fi
+
 # Check if the directory exists
-KLIPPER_DIRECTORY=$1
 if [ ! -d "${KLIPPER_DIRECTORY}" ]; then
     echo "Error: Directory '${KLIPPER_DIRECTORY}' does not exist."
     exit 1
