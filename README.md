@@ -10,7 +10,7 @@ Build the `klipper-builder` Docker image
 cd ~
 git clone https://github.com/dhoard/klipper-builder
 cd klipper-builder/docker
-./build-docker-image.sh
+./build-klipper-builder.sh
 ```
 
 Build Klipper
