@@ -7,7 +7,8 @@ Code to build a Docker image to build Klipper
 Build the Docker image
 
 ```
-cd docker
+git clone https://github.com/dhoard/klipper-builder
+cd klipper-builder/docker
 ./build-docker-image.sh
 ```
 
