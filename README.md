@@ -20,5 +20,5 @@ cd ~
 git clone https://github.com/Klipper3d/klipper
 cd klipper
 make menuconfig
-../klipper-builder/build-klipper.sh
+../klipper-builder/build.sh
 ```
